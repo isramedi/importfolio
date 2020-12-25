@@ -1,0 +1,47 @@
+doctype html
+html(lang='en')
+  include ../common/head.pug
+  +head("Israel Medina's Portfolio")
+  body.bg-grey
+    header
+      include ../common/navbar.pug
+      +navbar(user)
+      .container
+        .row.align-items-center
+           .col-md-6.order-md-1.text-center.text-md-left.pr-md-5
+
+             h1= title
+             p Phone:
+             p 
+               | Email: 
+               a.uri(href = "mailto: israel.medina.business@gmail.com") israel.medina.business@gmail.com
+
+             p LinkedIn: URL
+             p
+               | GitHub: 
+               a.uri(href='https://github.com/isramedi') https://github.com/isramedi
+             #education.section.level1
+
+
+             .jumbotron
+               h1 Send Email to me
+               form(action="/contact", method="POST")
+                 .input-group.mb-3
+                   input(name="contact_name", type="text", placeholder="Enter your name").form-control
+                   .input-group-append     
+                 
+                   input(name="contact_email", type="email", placeholder="Enter your email").form-control
+                   .input-group-append     
+                 
+                 .input-group.mb-3
+                   textarea(name="contact_message", type="text", placeholder="Enter your message").form-control
+                   .input-group-append     
+
+                 .input-group-append
+                   button(type="submit").btn.btn-primary Send Email
+               
+
+
+    include ../common/footer.pug
+    +footer()
+               

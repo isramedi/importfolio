@@ -1,0 +1,37 @@
+mixin navbar(user)
+  head
+    link(rel="stylesheet" href="style.css")
+    style. 
+      .navbar-light {
+        background-color: #e3f2fe;	
+        font-size: larger;
+        padding: .5em;
+      }
+      
+
+  nav.navbar.navbar-expand-sm.navbar-light
+
+    //a(href="/dashboard", aria-label="").navbar-brand.mr-0.mr-md-2
+    //  img(src="/images/", width="36", height="36")
+
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      .collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item
+            a.nav-link(href="/") LOGO (web dev)
+      
+      .navbar-right
+        ul.navbar-nav.mr-auto
+          li.nav-item
+            a.nav-link(href="/projects") Projects
+          li.nav-item
+            a.nav-link(href="/documents/resume") Resume
+          li.nav-item
+            a.nav-link(href="/about") About
+          li.nav-item
+            a.nav-link(href="/contact") Contact
+
+  br
+  br

@@ -1,0 +1,44 @@
+doctype html
+html(lang='en')
+  include ../common/head.pug
+  +head("Israel Medina's Portfolio")
+  body.bg-grey
+    header
+      include ../common/navbar.pug
+      +navbar(user)
+      .container
+        .row.align-items-center
+        h1.text-center= title
+        .col-md-6.order-md-1.text-center.text-md-left.pr-md-5
+
+          .card-deck
+            .card
+              img.card-img-top(src='...' alt='image')
+              .card-body
+                h5.card-title Remind Application
+                p.card-text 
+                  | Web App: 
+          p
+            | Code Repository: 
+            a.uri(href="https://github.com/isramedi/smart-remind-csci440") Github
+               
+
+
+          h1 Portfolio Website (This website)
+          p 
+            | Web App: 
+            a.uri(href="https://israelmedina.xyz") Portfolio Home
+          p
+            | Code Repository: 
+            a.uri(href="https://github.com/isramedi/importfolio") Github
+               
+
+          h1 Budget Managment
+
+          p 
+            | Web App: 
+            a.uri(href="http://firstwebsitetest.epizy.com") Budget App
+               
+    include ../common/footer.pug
+    +footer()
+               

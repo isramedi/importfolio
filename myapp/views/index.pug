@@ -1,33 +1,24 @@
-extends layout
+doctype html
+html(lang='en')
+  include common/head.pug
+  +head("Israel Medina's Portfolio")
+  body.bg-grey
+    header
+      include common/navbar.pug
+      +navbar(user)
+      .container
+        .row.align-items-center
+             .jumbotron
+               h1.display-4= title
+               p.lead Aspiring Web App Developer
+               hr.my-4
+               p Contact me for inquires / hire me
+               a(href="contact")
+                 button(type="button").lead.btn.btn-primary.btn-lg Contact Me
+               
 
-block content
-  h1= title
-  p Welcome to #{title}
-  h1 Israel Medina
-  p Address: Dallas, Texas, Zip Code
-  p Phone:
-  p Email:
-  p Website:
-  p LinkedIn: URL
-  p
-    | GitHub: 
-    a.uri(href='https://github.com/isramedi') https://gi thub.com/isramedi
-  #education.section.level1
-    h1 Education
-    p
-      | Bachelor of Science in Computer Science Expected: May 2020 Texas A&amp;a mp;M University-Commerce, Commerce, TX
-    p
-      | Bachelor of Science, Double Major in Mathematics Expected: May 2020 Texas A&amp;M University-Commerce, Commerce, TX
-    p
-      strong Certifications:
-    p
-      strong Other Relevant courses:
-  #career-objective.section.level1
-    h1 Career Objective
-    pre.
-      
-  #relevant-courses.section.level1
-    h1 Relevant Courses:
-    pre.
-      
-  
+
+
+    include common/footer.pug
+    +footer()
+               

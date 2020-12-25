@@ -1,0 +1,30 @@
+doctype html
+html(lang='en')
+  include ../common/head.pug
+  +head("Israel Medina's Portfolio")
+  body.bg-grey
+    header
+      include ../common/navbar.pug
+      +navbar(user)
+      .container
+        .row.align-items-center
+           .col-md-6.order-md-1.text-center.text-md-left.pr-md-5
+             h1= title
+
+             p Hello, my name is Israel Medina, and I am a Texas A&M Commerce student web developer! I like to create useful applications and host them online for people to use.
+
+             h1 Interest
+             p I like to code and make applications, mostly in Javascript and NodeJS. However, I have skills and am familiar with many different platforms as well, such as Python, Java, C++, SQL and PHP.
+
+             h1 Career Goals
+             p I wish to seek an entry-level job or internship to be able to enter the web development industry. 
+             p Working in the industry will allow for me to grow my skills and experience in a more professoinal setting. 
+             p In the distant future, I wish to consider a way to implement AI into web development applications. 
+             
+             h1 Education
+             p I am a student in Texas A&M University at Commerce, majoring in a Bacheolor's in Compouter Science, with a double major in Mathematics. 
+
+               
+    include ../common/footer.pug
+    +footer()
+               
