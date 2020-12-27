@@ -11,6 +11,7 @@ router.get('/', index.index);
 router.get('/projects', main.projects);
 router.get('/about', main.about);
 router.get('/contact', main.contact);
+router.post('/contact', main.contact_submit);
 
 /* Get documents. */
 router.get('/documents/resume', index.resume);
