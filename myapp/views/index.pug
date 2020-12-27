@@ -1,13 +1,25 @@
 doctype html
 html(lang='en')
   include common/head.pug
+  head
+    style. 
+      body {
+        background-image: url("images/Watercolor-background.jpg");
+        //filter: blur(4px);
+      }
+      .jumbotron {
+        //background-color: #96becb !important;
+        //filter: blur(4px);
+      }
+      
+
   +head("Israel Medina's Portfolio")
   body.bg-grey
     header
       include common/navbar.pug
       +navbar(user)
       .container
-        .row.align-items-center
+        .row.align-items-center.justify-content-center
              .jumbotron
                h1.display-4= title
                p.lead Aspiring Web App Developer

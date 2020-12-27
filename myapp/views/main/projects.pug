@@ -8,36 +8,46 @@ html(lang='en')
       +navbar(user)
       .container
         .row.align-items-center
+
         h1.text-center= title
-        .col-md-6.order-md-1.text-center.text-md-left.pr-md-5
+        br
+
+        .col-md.order-md-1.text-center.text-md-left.pr-md-0
 
           .card-deck
             .card
-              img.card-img-top(src='...' alt='image')
+              img.card-img-top(src='images/remind_app.jpg' alt='remind_app')
               .card-body
                 h5.card-title Remind Application
                 p.card-text 
                   | Web App: 
-          p
-            | Code Repository: 
-            a.uri(href="https://github.com/isramedi/smart-remind-csci440") Github
+                  a.uri(href="http://smart-remind.com") Remind App
+                p.card-text
+                  | Code Repository: 
+                  a.uri(href="https://github.com/isramedi/smart-remind-csci440") Github
                
 
 
-          h1 Portfolio Website (This website)
-          p 
-            | Web App: 
-            a.uri(href="https://israelmedina.xyz") Portfolio Home
-          p
-            | Code Repository: 
-            a.uri(href="https://github.com/isramedi/importfolio") Github
+            .card
+              img.card-img-top(src='images/importfolio.jpg' alt='portfolio')
+              .card-body
+                h5.card-title Portfolio Website (This website)
+                p.card-text 
+                  | Web App: 
+                  a.uri(href="https://israelmedina.xyz") Portfolio Home
+                p.card-text
+                  | Code Repository: 
+                  a.uri(href="https://github.com/isramedi/importfolio") Github
                
 
-          h1 Budget Managment
+            .card
+              img.card-img-top(src='images/budget_app.jpg' alt='budget_app')
+              .card-body
+                h5.card-title Budget Managment
 
-          p 
-            | Web App: 
-            a.uri(href="http://firstwebsitetest.epizy.com") Budget App
+                p.card-text 
+                  | Web App: 
+                  a.uri(href="http://firstwebsitetest.epizy.com") Budget App
                
     include ../common/footer.pug
     +footer()

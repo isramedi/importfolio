@@ -8,4 +8,13 @@ a {
 }
 
 
+      navbar-light {
+        //background-color: #e3f2fe;	
+        //background-color: #42b6f5;	
+        //background-color: #4ea8bf;	
+        background-color: #96becb;	
+        font-size: larger;
+        padding: .5em;
+        color: #6c8e9a
+      }
 

@@ -8,7 +8,7 @@ html(lang='en')
       +navbar(user)
       .container
         .row.align-items-center
-           .col-md-6.order-md-1.text-center.text-md-left.pr-md-5
+           .col-md.order-md-1.text-center.text-md-left.pr-md-5
 
              h1= title
              p Phone:
@@ -24,7 +24,8 @@ html(lang='en')
 
 
              .jumbotron
-               h1 Send Email to me
+               h1 Send Email To Me
+               br
                form(action="/contact", method="POST")
                  .input-group.mb-3
                    input(name="contact_name", type="text", placeholder="Enter your name").form-control
